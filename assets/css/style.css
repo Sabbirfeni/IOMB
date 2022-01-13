@@ -204,7 +204,8 @@ ul li {
   /* Why us css start*/
   .our-approach {
     width: 100%;
-    height: 100vh;
+    padding-top: 3%;
+    padding-bottom: 3%;
     background-image: url("../images/why-us-background.jpg");
     background-size: cover;
     position: relative;
@@ -532,7 +533,8 @@ ul li {
   /* Contact Us section start */
   .contact-container {
     width: 100%;
-    height: 90vh;
+    padding-top: 3%;
+    padding-bottom: 3%;
     background-color: #00000033;
     background-image: url("../images/contact-us-image.jpeg");
     background-repeat: no-repeat;
