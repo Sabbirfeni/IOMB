@@ -1,0 +1,173 @@
+
+.navbar {
+  padding: 1% 15%;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-item {
+    margin: 0px 15px ;
+}
+
+.navbar-nav li a {
+  width:90px;
+  height: 55px;
+  text-align: center;
+  color: white;
+  transition: 0.6s;
+  position: relative;
+  display: block;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #ffb039;
+}
+
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.hover-border {
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.navbar-nav li:hover .hover-border {
+  width: 100%;
+  height: 3px;
+  background-color: #ffb039;;
+}
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffb45f;
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 0.3s;
+    margin-top: 3px;
+    border-radius: 2px;
+  }
+ 
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+
+
+
+
+
+
+
+.btn{
+  flex: 1 auto;
+  text-align:center;
+  background:#eee;
+  transition: all 1s ease-out;
+}
+
+
+/* ---- luxury btns ---- */
+.luxury{ /* block background */
+  background-color:#ffb039;
+}
+.luxury .btn{ /* general */
+  background:transparent;
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  color:#fff;
+}
+
+.luxury .btn-1{ /* inspired by https://codepen.io/dbox/pen/bdzeEw */
+  color: rgba(255,255,255,0.8);
+
+  background-image: linear-gradient(270deg, rgba(255,255,255,.9), rgba(255,255,255,.9), rgba(255,255,255,0), rgba(255,255,255,0));
+}
+.luxury .btn-1:hover{
+  border-color:transparent;
+  color:#161616;
+  background-position: 99% 50%;
+}
+
+
+@media only screen and (max-width: 1500px) { 
+
+  .navbar {
+    padding: 2% 10%;
+  }
+
+}
+
+
+@media only screen and (max-width: 1200px) { 
+
+  .navbar {
+    padding: 2% 6%;
+  }
+  
+  .navbar-nav li a {
+    font-size: 13px;
+    height: 55px;
+    width:100px;
+  }
+
+}
+
+
+@media only screen and (max-width: 992px) { 
+
+  .navbar {
+    padding: 4% 6%;
+  }
+  .navbar-nav {
+    background-color:#00000075;
+    width: 100%;
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+    color: white;
+    
+  }
+  .nav-item:hover {
+    background-color: #ffb039;
+  }
+  .nav-link:hover {
+    color: white;
+}
+  .hover-border {
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 600px) { 
+
+  .navbar {
+    padding: 5% 4%;
+  }
+
+}
