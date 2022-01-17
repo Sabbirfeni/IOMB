@@ -24,7 +24,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <!-- Lottie animation link -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    
+    <!-- Scroll animation link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         #navbar {
             transition: 0.4s;
@@ -76,11 +78,11 @@
                             <div class="hover-border"></div>
                         </li>
                         <li  class="nav-item">
-                            <a class="nav-link d-flex align-items-center justify-content-center" aria-current="page" href="#">Teacher</a>
+                            <a class="nav-link d-flex align-items-center justify-content-center" aria-current="page" href="#">Tutor</a>
                             <div class="hover-border"></div>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link d-flex align-items-center justify-content-center ">Blog</a>
+                        <li class="nav-item">
+                            <a href="tutor-sign-up.html" class="nav-link d-flex align-items-center justify-content-center ">Become tutor</a>
                             <div class="hover-border"></div>
                         </li>
                         <!-- <li class="nav-item dropdown">
@@ -93,10 +95,7 @@
                                 <a href="retail-projects.html" class="w-100 d-flex align-items-center justify-content-center drop-items btn btn-1">Quran</a>
                             </div>
                         </li> -->
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link d-flex align-items-center justify-content-center ">Services</a>
-                            <div class="hover-border"></div>
-                        </li>
+                       
                         
                         <li  class="nav-item">
                             <a href="contact.html" class="nav-link d-flex align-items-center justify-content-center" aria-current="page" href="#">Contact</a>
@@ -165,7 +164,7 @@
     <div class="about-us-section padding">
 
     
-        <div class="container about-us-container " id="About-Us">
+        <div class="container about-us-container " id="About-Us" data-aos="fade-up" data-aos-duration="800">
             
             <div class="row">
                 <div class="col-xl-6">
@@ -203,7 +202,7 @@
              
             <div class="row text-center ">
                 <h1 class="section-heading mb-2 mb-md-5 text-center mb-md-5">Why Quran teaching institute?</h1>
-                <div class="col-6 col-xl-3 mt-2" style="z-index: 2;">
+                <div class="col-6 col-xl-3 mt-2" style="z-index: 2;" data-aos="fade-up" data-aos-duration="800" data-aos-offset="300">
                     <div class="p-2 p-md-4 approach-col">
                         <!-- <span class="approach-line"></span> -->
                         <i class="fas fa-users" style="color: #31f3e9;"></i>
@@ -211,7 +210,7 @@
                         <p>Our teacher hold ljazah from Al-Azhar Islamic University</p>
                     </div>
                 </div>
-                <div class="col-6 col-xl-3 mt-2" style="z-index: 2;">
+                <div class="col-6 col-xl-3 mt-2" style="z-index: 2;" data-aos="fade-up" data-aos-duration="800" data-aos-offset="300">
                     <div class="p-2 p-md-4 approach-col">
                         <!-- <span class="approach-line"></span> -->
                         <i class="fas fa-handshake" style="color: #ffb45f;"></i>
@@ -219,7 +218,7 @@
                         <p>One to one classes from the comfort of your own home, at a time and pace that you choose</p>
                     </div>
                 </div>
-                <div class="col-6 col-xl-3 mt-2" style="z-index: 2;">
+                <div class="col-6 col-xl-3 mt-2" style="z-index: 2;" data-aos="fade-up" data-aos-duration="800" data-aos-offset="300">
                     <div class="p-2 p-md-4 approach-col">
                         <!-- <span class="approach-line"></span> -->
                         <i class="fas fa-calendar-alt" style="color: #23c762;"></i>
@@ -227,7 +226,7 @@
                         <p>We offer yiu the best learning experience, study from anywhere at your convenient schedule</p>
                     </div>
                 </div>
-                <div class="col-6 col-xl-3 mt-2" style="z-index: 2;">
+                <div class="col-6 col-xl-3 mt-2" style="z-index: 2;" data-aos="fade-up" data-aos-duration="800" data-aos-offset="300">
                     <div class="p-2 p-md-4 approach-col">
                         <!-- <span class="approach-line"></span> -->
                         <i class="fas fa-clock" style="color: #ff34f5;"></i>
@@ -245,8 +244,8 @@
                 
             </div>
 
-            <div class="extra-services mt-2 mt-md-4">
-                <div class="container">
+            <div class="extra-services mt-2 mt-md-4" style="z-index: 2;" data-aos="zoom-in-up" data-aos-duration="800" data-aos-offset="300">
+                <div class="container"  >
                     <div class="row">
         
                         <div class="col-4 p-3 p-md-5 d-flex align-items-center justify-content-center service-col border-right">
@@ -289,7 +288,7 @@
         <div class="" style="z-index: 2;margin: 2rem;">
             <h1 class="section-heading mb-3 text-center text-white">Our Courses</h1>
             <p class="mb-4 mb-md-5 text-white text-center">We offer variety of Quran, Islamic and Arabic Language courses from beginner to advance foe both kids and adult</p>
-            <div class="row">
+            <div class="row"  data-aos="fade-up" data-aos-duration="800" data-aos-offset="400">
                 <div class="col-md-6 mt-3 mt-xl-0 col-xl-3">
                     <div class="card">
                         <img src="assets/images/course-1.jpg" alt="Jane" style="width:100%">
@@ -587,7 +586,7 @@
         <h1 class="section-heading text-center mb-2">Contact Us</h1>
         <p class="text-center">Fell free to contact us</p>
         <div class="contact-container d-flex align-items-center justify-content-center">
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-duration="800" data-aos-offset="300" style="z-index: 2;">
                 <div class="row">
                    
                     <div class="col-md-6 d-flex align-items-center justify-content-center contact-col">
@@ -610,35 +609,36 @@
 
                         <div class="w-100 align-items-center">
 
-                        <div class="row">
-                            <div class="col-6 col-md-12">
-                                <div class="contact-system d-flex align-items-center justify-content-center rounded mb-3">
-                                    <a href="tel:04 2849180" class="w-100">
-                                        <i class="fas fa-phone-square-alt"></i>
-                                        <h4>Call us</h4>
-                                        <p>04 2849180</p> 
-                                    </a>
+                            <div class="row">
+                                <div class="col-6 col-md-12">
+                                    <div class="contact-system d-flex align-items-center justify-content-center rounded mb-3">
+                                        <a href="skype:live: .cid.effdca131a6e97cb?chat" class="w-100">
+                                            <i class="fab fa-skype"></i>
+                                            <h4>Skype</h4>
+                                            <p>live: .cid.effdca131a6e97cb</p> 
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-6 col-md-12">
-                                <div class="contact-system d-flex align-items-center justify-content-center rounded mb-3">
-                                    <a href="mailto:sales@eurogulfme.com" class="w-100">
-                                        <i class="fas fa-envelope-open-text"></i>
-                                        <h4>Email us</h4>
-                                        <p>sales@eurogulfme.com</p> 
-                                    </a>
+                                <div class="col-6 col-md-12">
+                                    <div class="contact-system d-flex align-items-center justify-content-center rounded mb-3">
+                                        <a href="tel:+8801706068123" class="w-100">
+                                            <i class="fas fa-phone-square-alt"></i>
+                                            <h4>Call us</h4>
+                                            <p>+8801706068123</p> 
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
 
 
-                        </div>
-                        
+                            </div>
+                            
 
                             <div class="contact-system d-flex align-items-center justify-content-center rounded">
-                                <a class="w-100">
-                                    <i class="fas fa-search-location"></i>
-                                    <h4>Address</h4>
-                                    <p>Dhaka, Bangladesh</p> 
+                               
+                                <a href="mailto:arabicmohammad21@gmail.com" class="w-100">
+                                    <i class="fas fa-envelope-open-text"></i>
+                                    <h4>Email us</h4>
+                                    <p>arabicmohammad21@gmail.com</p> 
                                 </a>
                             </div>
 
@@ -688,18 +688,17 @@
                     <div class="footer-content">
                         <h6>Quick Links</h6>
                         <p><a href="about-us.html">About Us</a></p>
-                        <p><a href="projects.html">Latest Projects</a></p>
-                        <p><a href="services.html">Our Services</a></p>
-                        <p><a href="#Clients">Clients</a></p>
+                        <p><a href="#">Tutor</a></p>
+                        <p><a href="tutor-sign-up.html">Become a tutor</a></p>
+                        <p><a href="#Clients">Review</a></p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3 d-flex align-items-start justify-content-center">
                     <div class="footer-content">
                         <h6>Contuct Us</h6>
-                        <p><a href="tel:04 2849180"><i class="fas fa-phone-square-alt"></i> 04 2849180</a></p>
-                       
-                        <p><a href="mailto:sales@eurogulfme.com"><i class="fas fa-envelope-open-text"></i> Send us a Email</a></p>
-                        <p><a href="#Contact-Us"><i class="fas fa-search-location"></i> Find us</a></p>
+                        <p><a href="#Contact-Us"><i class="fab fa-skype"></i>Skype</a></p>
+                        <p><a href="tel:+8801706068123"><i class="fas fa-phone-square-alt"></i>Call Us</a></p>
+                        <p><a href="mailto:arabicmohammad21@gmail.com"><i class="fas fa-envelope-open-text"></i> Send us Email</a></p>
                     </div>
                 </div>
             </div>
@@ -720,6 +719,8 @@
 
 
 
+    <!-- Scroll animation link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 
@@ -727,6 +728,7 @@
 
     <script>
 
+        AOS.init();
 
 
         // Hero image slider js start

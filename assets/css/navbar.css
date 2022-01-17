@@ -16,7 +16,7 @@ a {
 }
 
 .navbar-nav li a {
-  width:90px;
+  width:120px;
   height: 55px;
   text-align: center;
   color: white;
@@ -24,6 +24,7 @@ a {
   position: relative;
   display: block;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .nav-link:hover {
