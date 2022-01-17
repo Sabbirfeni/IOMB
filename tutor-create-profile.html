@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <!-- Main css link -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/tutor-sign-up.css">
+    <link rel="stylesheet" href="assets/css/tutor-create-profile.css">
 
     <!-- Slider link -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
@@ -27,12 +27,22 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- Scroll animation link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- 
+
+    <!-- Multi select link -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" href="assets/css/multiple-select.css">
+
+    <!-- Phone number country code link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
     <style>
         #navbar {
             transition: 0.4s;
             background-color: #00000075;
         };
+      
     </style>
 
     <title>Quran Learning</title>
@@ -113,33 +123,138 @@
 
 
 
-    <!-- Tutor sign up start -->
-
-    <div class="tutor-sign-up d-flex align-content-center justify-content-center">
+    <div class="profile-form d-flex align-content-center justify-content-center">
         <div class="container d-flex align-content-center justify-content-center" style="z-index: 2;">
             <div class="row d-flex align-content-center justify-content-center">
                 <div class="col-12" data-aos="zoom-in" data-aos-duration="1000">
                     <form >
-                        <h3 class="text-black">Sign up as a Tutor</h3>
-                        <div class="form-group">
-                        <label for="Full Name" class="">Full Name</label>
-                        <input type="text" class="form-control" id="Full Name" aria-describedby="" placeholder="Full name">
+                        <div class="row">
+
+
+                            <div class="col-12 d-flex align-items-center justify-content-center mb-3 mb-md-4">
+                                <div>
+                                    <div class="image-preview" id="imagePreview">
+                                        <img src="" alt="Image preview" class="image-preview__image" style="width: 150px; min-height: 130px; border-radius: 6px;">
+                                        <span class="image-preview__default-text">Profile</span>
+                                    </div>
+                                    <input type="file" name="" id="inpFile" accept="image/*">
+                                    <label for="inpFile" class="file-upload-lebel w-100 text-center">Upoad Profile</label>
+                                   
+                                </div>
+                            </div>
+
+
+                            <div class="form-group col-md-6">
+                                <label for="Full Name" class="">Full Name</label>
+                                <input type="text" class="form-control" id="Full Name" aria-describedby="" placeholder="Mohammad Ali ...">
+                            </div>
+
+
+                            <div class="form-group col-md-6">
+                                <label for="E-mail" class="">E-mail</label>
+                                <input type="email" class="form-control" id="E-mail" aria-describedby="" placeholder="Enter email">
+                            </div>
+
+
+                       
+                            <div class="form-group col-md-6">
+                                <label for="phone-number" class="">Phone Number</label>
+                                <br>
+                                <input  type="tel" class="form-control phone-number" id="phone" name="phone" aria-describedby="" placeholder="">
+                             
+                            </div>
+
+
+                            <div class="form-group col-md-6">
+                                <label for="Gender" class="">Gender</label>
+                                <select class="form-select form-select-md" aria-label=".form-select-lg example">
+                                    <option value="1" selected>Male</option>
+                                    <option value="2">Female</option>
+                                    <option value="3">Other</option>
+                                </select>
+                            </div>
+
+
+                            <div class="form-group col-md-6">
+                                <label for="country" class="">Country</label>
+                                <select class="form-select form-select-md" aria-label=".form-select-lg example">
+                                    <option value="1" selected>Bangladesh</option>
+                                    <option value="2">Pakistan</option>
+                                    <option value="3">India</option>
+                                    <option value="3">Turkey</option>
+                                    <option value="3">Indonesia</option>
+                                    <option value="3">United Arab Emirates</option>
+                                </select>
+                            </div>
+
+
+                            <div class="form-group col-md-6">
+                                <label for="country" class="">Price per hour</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">$</span>
+                                    <input type="number" class="form-control" placeholder="0.00">
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="country" class="">Language</label>
+                                <select class="form-select form-select-md" aria-label=".form-select-lg example">
+                                    <option value="1">English</option>
+                                    <option value="2">Bangla</option>
+                                    <option value="3">Hindi</option>
+                                    <option value="3">Urdu</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="profile-video-url" class="">Profile video URL</label>
+                                <div class="input-group">
+                                    <input type="url" class="form-control" id="profile-video-url" placeholder="www.example.com">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group col-md-6">
+                                <label for="country" class="">Courses to teach</label>
+                                <select class="form-select form-select-md" aria-label=".form-select-lg example" multiple="multiple" id="myMulti">
+                                    <option value="1">Arabic language</option>
+                                    <option value="2">Quran Tajweed</option>
+                                    <option value="3">Quran Memorization</option>
+                                    <option value="2">Islamic Studies</option>
+                                </select>
+                            </div>
+
+
+                            <div class="form-group col-md-6">
+                                <label for="time-zone" class="">Time Zone</label>
+                                <select class="form-select form-select-md" aria-label=".form-select-lg example" id="time-zone">
+                                    <option value="1">(GMT-11:00) Midway Island, Samoa</option>
+                                    <option value="2">(GMT-10:00) Hawaii</option>
+                                    <option value="3">(GMT-9:00) Alaska</option>
+                                </select>
+                            </div>
+                           
+
+                            <div class="form-group col-md-6">
+                                <label for="date-of-birth" class="">DoB</label>
+                                <div class="input-group">
+                                    <input type="date" class="form-control" id="date-of-birth" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="form-group col-12">
+                                <label for="about" class="">About</label>
+                                <div class="input-group">
+                                  <textarea name="" id="about" style="height: 200px;"></textarea>
+                                </div>
+                            </div>
+
+                           
+                            
+                            
                         </div>
-                        <div class="form-group">
-                            <label for="E-mail" class="">E-mail</label>
-                            <input type="email" class="form-control" id="E-mail" aria-describedby="" placeholder="@gmail.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="password" class="">Password</label>
-                            <input type="password" class="form-control" id="password" aria-describedby="" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <label for="Confirm-Password" class="">Confirm Password</label>
-                            <input type="password" class="form-control" id="Confirm-Password" aria-describedby="" placeholder="Confirm Password">
-                        </div>
-                        
                     
-                        <a href="tutor-create-profile.html" type="submit" class="btn btn-primary w-100 mt-3 p-2 p-md-3">Submit</a>
+                        <a href="profile-form.html" type="submit" class="btn btn-primary w-100 mt-md-3 mt-2 p-2 p-md-3">Submit</a>
                     </form>
                 </div>
             </div>
@@ -148,7 +263,10 @@
 
     </div>
 
-    <!-- Tutor sign up end -->
+
+
+
+
 
 
 
@@ -209,11 +327,50 @@
 
 
 
+
+
+    <!-- Multiple select link -->
+    <script  src="assets/js/multiple-select.js"></script>
+
     <!-- Scroll animation link -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
 
     <script>
+        // Scroll animation js
         AOS.init();
+
+
+
+        // File upload image preview js
+        const inpFile = document.getElementById("inpFile");
+        const previewContainer = document.getElementById("imagePreview");
+        const previewImage = previewContainer.querySelector(".image-preview__image");
+        const previewDefaultText = previewContainer.querySelector(".image-preview__default-text");
+
+
+        inpFile.addEventListener("change", function() {
+            const file = this.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                previewDefaultText.style.display = "none";
+                previewImage.style.display = "block";
+
+                reader.addEventListener("load", function() {
+                    previewImage.setAttribute("src", this.result);
+                });
+                reader.readAsDataURL(file);
+
+            } else {
+                previewDefaultText.style.display = null;
+                previewImage.style.display = null;
+                previewImage.setAttribute("src", "");
+            }
+        });
+
+
       </script>
 
 
@@ -233,4 +390,12 @@
     -->
   </body>
 
+  
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
 </html>
