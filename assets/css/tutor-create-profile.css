@@ -110,6 +110,7 @@
       width: 260px;
     }
     .profile-form {
-      height: 215vh;
+      height: 250vh;
+      padding-top: 70px;
     }
   }
