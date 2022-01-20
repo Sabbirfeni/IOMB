@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <!-- Main css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tutor-list.css">
 
     <!-- Slider link -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
@@ -26,11 +27,17 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- Scroll animation link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <!-- Dropdown link -->
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    
     <style>
         #navbar {
             transition: 0.4s;
+            background-color: #00000075
         };
+ 
+     
+
     </style>
 
     <title>Quran Learning</title>
@@ -43,6 +50,10 @@
 
 
 
+
+
+
+    
 
     <!-- Navbar start -->
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
@@ -82,7 +93,7 @@
                             <div class="hover-border"></div>
                         </li>
                         <li class="nav-item">
-                            <a href="tutor-sign-up.html" class="nav-link d-flex align-items-center justify-content-center ">Become tutor</a>
+                            <a class="nav-link d-flex align-items-center justify-content-center" href="tutor-sign-up.html" >Become tutor</a>
                             <div class="hover-border"></div>
                         </li>
                         <!-- <li class="nav-item dropdown">
@@ -114,48 +125,271 @@
 
 
 
-    <!-- Hero section start -->
-    <div class="hero-container d-flex align-items-center justify-content-center">
-       
 
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide "><img src="assets/images/slider-image-2.jpg" alt="slider-img" srcset=""></div>
-                <div class="swiper-slide "><img src="assets/images/slider-image-1.jpeg" alt="slider-img" srcset=""></div>
-                <div class="swiper-slide "><img src="assets/images/slider-image-3.jpg" alt="slider-img" srcset=""></div>
-            </div>
-            <!-- If we need pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
 
-            <!-- If we need navigation buttons -->
-            <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
 
-        </div>
-
-        <!-- Hero text -->
-        <!-- <div class="container absolute_position">
-            <div class="row">
-                <div class="col-12 text-center">
-            
-                    <div class="heroAnimatedText">
-                        <span id="text" class="animated-text"></span>
-                        <div class="console-underscore" id='console'>&#95;</div>
+    <!-- Tutor list start -->
+    <div class="tutor-list-container">
+        <div class="tutor-list-heading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1><b>Find a tutor</b></h1>
+                      
+                        <h6>Reach your personal learning goals faster with expert Quran teachers from around the World.</h6>
+                        <form action="" class="mt-5">
+                            <div class="row p-3 bg-light rounded">
+                                <div class="col-md-5 d-flex align-items-baseline">
+                                    <i class="fas fa-book p-2"></i>
+                                    <div class="form-group w-100">
+                                        <select class="form-select form-select-md" aria-label=".form-select-lg example">
+                                            <option value="1">Arabic language</option>
+                                            <option value="2">Quran Tajweed</option>
+                                            <option value="3">Quran Memorization</option>
+                                            <option value="2">Islamic Studies</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-5">
+                                    <div class="row pt-2 mt-3 mt-md-0">
+                                        <div class="col-md-3">
+                                            <p class="mb-0 pt-1"><i class="fas fa-dollar-sign"></i>1 - <i class="fas fa-dollar-sign"></i><span id="demo"></span></p>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="slidecontainer d-flex align-items-center justify-content-center pt-3">
+                                        
+                                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                                
+                                              </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-12 col-md-2 mt-5 mt-md-0 d-flex align-items-center justify-content-center bg-success rounded">
+                                    <i class="fas fa-search text-white p-2 p-md-3" ></i>
+                                </div>
+                            </div>
+                        </form>
+                      
                     </div>
-                    <p>We care about your product as much as you do.</p> 
-            
-        
                 </div>
             </div>
-        </div> -->
+        </div>
 
+        <div class="tutor-list" style="background-color: #e9e9e9;">
+            <div class="container p-5">
+
+
+
+                <!-- New tutor -->
+                <div class="row bg-white d-flex align-content-center justify-content-center single-tutor-row p-3 p-md-5 mb-4">
+                    <div class="col-md-2 tutor-profile-image">
+                        <img src="assets/images/profile-image.jpg" alt="" class="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tutor-info-container">
+                            <div class="d-flex align-items-baseline">
+                                <a href="#"><h3>Mohammad Ali</h3></a><i class="flag flag-bangladesh"></i> <img src="assets/images/verification-icon.png" alt="" class="verification-icon">
+                            </div>
+
+                            <!-- Language -->
+                            <div class="language-container">
+                                
+                                    <span class="bg-light">English</span>
+                                    <span class="bg-primary text-white language-level">Upper-intermediate</span>
+
+                                    <span class="bg-light">Arabic</span>
+                                    <span class="bg-primary text-white language-level">Advanced</span>
+
+                                    <span class="bg-light">Urdu</span>
+                                    <span class="bg-primary text-white language-level">Upper-intermediate</span>
+
+                                    <span class="bg-light">Bengali</span>
+                                    <span class="bg-primary text-white language-level">Advanced</span>
+                            </div>
+                            <div class="col-md-12">
+                                
+                                <p>
+                                    Assalamualaikum wa rahmatullahi wa barakatuh Welcome to my Quran teaching Lessons. From 12 years, I have researched 
+                                    and found forty lessons of Quran teaching rules or (فائدة) for the students. Anyone who memorizes or 
+                                    understand these forty lessons he or she will must be 100% guaranteed to be able to read and recite the 
+                                    <!-- <span id="dots">...</span><span id="more" style="display: none;"> -->
+                                        Qur'an properly I have started an Arabic education course with these forty lessons. Alhamdulillah 
+                                        in Bangladesh I have my own established educational institution called "Madrasatut Taqwa Al Islamia" 
+                                        where hundreds of students are memorizing these rules and completing Quran Nazera and Hifz. Since childhood, 
+                                        I have been involved in teaching and disseminating the Qur'an and the Qur'anic translation and various aspects of Islam
+                              
+                                    <!-- </span> -->
+                                </p>
+                                <!-- <button onclick="myFunction()" id="myBtn">Read more</button> -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="row">
+                            <div class="col-6 text-center">
+                                <h5><i class="fas fa-star p-1"></i><b>5</b></h5>
+                                <p>20 reviews</p>
+                            </div>
+                            <div class="col-6 text-center">
+                                <h5><i class="fas fa-dollar-sign p-1"></i><b>6</b></h5>
+                                <p>Per hour</p>
+                            </div>
+                        </div>
+                       <a href="#" class="btn btn-success w-100 p-2 book-trail-btn">Book a trail</a>
+                    </div>
+                </div>
+
+
+
+                <!-- New tutor -->
+                <div class="row bg-white d-flex align-content-center justify-content-center single-tutor-row p-3 p-md-5  mb-4">
+                    <div class="col-md-2 tutor-profile-image">
+                        <img src="assets/images/profile-image2.jpg" alt="" class="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tutor-info-container">
+                            <div class="d-flex align-items-baseline">
+                                <a href="#"><h3>Nazrin Sultana</h3></a><i class="flag flag-bangladesh"></i> <img src="assets/images/verification-icon.png" alt="" class="verification-icon">
+                            </div>
+
+                            <!-- Language -->
+                            <div class="language-container">
+                                
+                                <span class="bg-light">English</span>
+                                <span class="bg-primary text-white language-level">Advanced</span>
+
+                                <span class="bg-light">Bengali</span>
+                                <span class="bg-primary text-white language-level">Advanced</span>
+
+                            </div>
+                            <div class="col-md-12">
+                                <p>
+                                    Assalamu Alaikum Wa Rahmatullah. I have been teaching the Quran for quite a long time, and now I'll be teaching from this platform Alhamdulillah. • I always prefer 'practical' way of teaching. so that students need less time but more benefits and they do not feel pressured. • I give significant importance on pronunciations accordingly. • students don't have to restart from the beginning. I try to help them to start from where they were if possible. • I try to make a lesson plan which could be best for students in accordance with their age, learnt experience, mental state etc. • I'm very passionate about teaching Quran. I love to teach people how to recite Quraan with Tajweed and get basic knowledge of Islam. that's why I always think how to improve my skills more and more. so that students can get benefited as much as possible.
+                                </p>
+                            </div>
+
+                          
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="row">
+                            <div class="col-6 text-center">
+                                <h5><i class="fas fa-star p-1"></i><b>5</b></h5>
+                                <p>17 reviews</p>
+                            </div>
+                            <div class="col-6 text-center">
+                                <h5><i class="fas fa-dollar-sign p-1"></i><b>10</b></h5>
+                                <p>Per hour</p>
+                            </div>
+                        </div>
+                       <a href="#" class="btn btn-success w-100 p-2 book-trail-btn">Book a trail</a>
+                    </div>
+                </div>
+
+
+
+                <!-- New tutor -->
+                <div class="row bg-white d-flex align-content-center justify-content-center single-tutor-row p-3 p-md-5  mb-4">
+                    <div class="col-md-2 tutor-profile-image">
+                        <img src="assets/images/Anas.jpg" alt="" class="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tutor-info-container">
+                            <div class="d-flex align-items-baseline">
+                                <a href="#"><h3>Hossain Ahmed</h3></a><i class="flag flag-pakistan"></i> <img src="assets/images/verification-icon.png" alt="" class="verification-icon">
+                            </div>
+
+                            <!-- Language -->
+                            <div class="language-container">
+                                
+                                <span class="bg-light">English</span>
+                                <span class="bg-primary text-white language-level">Advanced</span>
+
+                                <span class="bg-light">Bengali</span>
+                                <span class="bg-primary text-white language-level">Advanced</span>
+                                
+                            </div>
+                            <div class="col-md-12">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="row">
+                            <div class="col-6 text-center">
+                                <h5><i class="fas fa-star p-1"></i><b>5</b></h5>
+                                <p>2 reviews</p>
+                            </div>
+                            <div class="col-6 text-center">
+                                <h5><i class="fas fa-dollar-sign p-1"></i><b>6</b></h5>
+                                <p>Per hour</p>
+                            </div>
+                        </div>
+                       <a href="#" class="btn btn-success w-100 p-2 book-trail-btn">Book a trail</a>
+                    </div>
+                </div>
+
+
+
+                
+                <!-- New tutor -->
+                <div class="row bg-white d-flex align-content-center justify-content-center single-tutor-row p-3 p-md-5  mb-4">
+                    <div class="col-md-2 tutor-profile-image">
+                        <img src="assets/images/profile-image-3.jpg" alt="" class="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tutor-info-container">
+                            <div class="d-flex align-items-baseline">
+                                <a href="#"><h3>Hasib Ullah</h3></a><i class="flag flag-india"></i> <img src="assets/images/verification-icon.png" alt="" class="verification-icon">
+                            </div>
+
+                            <!-- Language -->
+                            <div class="language-container">
+                                
+                                <span class="bg-light">English</span>
+                                <span class="bg-primary text-white language-level">Advanced</span>
+
+                                <span class="bg-light">Bengali</span>
+                                <span class="bg-primary text-white language-level">Advanced</span>
+                                
+                            </div>
+                            <div class="col-md-12">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, q
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="row">
+                            <div class="col-6 text-center">
+                                <h5><i class="fas fa-star p-1"></i><b>5</b></h5>
+                                <p>2 reviews</p>
+                            </div>
+                            <div class="col-6 text-center">
+                                <h5><i class="fas fa-dollar-sign p-1"></i><b>6</b></h5>
+                                <p>Per hour</p>
+                            </div>
+                        </div>
+                       <a href="#" class="btn btn-success w-100 p-2 book-trail-btn">Book a trail</a>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
 
     </div>
-    <!-- Hero section end -->
-
+    <!-- Tutor list end -->
 
 
 
@@ -177,6 +411,7 @@
                         <a href="#"><i class="fab fa-facebook-square"></i></a>
                         <a href="#"><i class="fab fa-instagram-square"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3 mt-4 mt-sm-0 d-flex align-items-start justify-content-center">
@@ -219,6 +454,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -239,12 +478,60 @@
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
-            if (document.body.scrollTop > 420 || document.documentElement.scrollTop > 420) {
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
                 document.getElementById("navbar").style.backgroundColor = "#00000075";
             } else {
-                document.getElementById("navbar").style.backgroundColor = "#55555500";
+                document.getElementById("navbar").style.backgroundColor = "#00000075";
             }
         }
+
+
+
+
+        // Number range js
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() {
+        output.innerHTML = this.value;
+        }
+
+
+
+        // Load more js
+        // function myFunction() {
+        // var dots = document.getElementById("dots");
+        // var moreText = document.getElementById("more");
+        // var btnText = document.getElementById("myBtn");
+
+        // if (dots.style.display === "none") {
+        //     dots.style.display = "block";
+        //     btnText.innerHTML = "Read more"; 
+        //     moreText.style.display = "none";
+        // } else {
+        //     dots.style.display = "none";
+        //     btnText.innerHTML = "Read less"; 
+        //     moreText.style.display = "inline";
+        // }
+        // }
+
+          // Load more js
+        //   function myFunction2() {
+        // var dots = document.getElementById("dots2");
+        // var moreText = document.getElementById("more2");
+        // var btnText = document.getElementById("myBtn2");
+
+        // if (dots.style.display === "none") {
+        //     dots.style.display = "block";
+        //     btnText.innerHTML = "Read more"; 
+        //     moreText.style.display = "none";
+        // } else {
+        //     dots.style.display = "none";
+        //     btnText.innerHTML = "Read less"; 
+        //     moreText.style.display = "inline";
+        // }
+        // }
     </script>
 
 

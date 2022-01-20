@@ -41,7 +41,7 @@ h1 {
   font-weight: bold;
 }
 h3 {
-  font-size: clamp(0.7rem, 2vw, 1.5rem);
+  font-size: clamp(0.7rem, 2vw, 1.3rem);
 }
 h4 {
   font-size: clamp(0.8rem, 2.3vw, 1.5rem);
@@ -330,10 +330,13 @@ ul li {
   }
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   
   }
+
   .card img {
-    height: 300px;
+    height: 270px;
+  }
+  .card:hover .card img {
+    transform: scale(1.4);
   }
   .card h3 {
     background-color: #3a3939;
@@ -556,14 +559,15 @@ ul li {
     z-index: 1;
   }
   .footer-social-icon a {
-    font-size: clamp(1rem, 1.4vw, 2rem);
-    margin-right: 25px;
+    font-size: clamp(1.3rem, 1.4vw, 2rem);
+    margin: 0px 15px;
     color: white;
     transition: 0.3s;
   }
-  .footer-social-icon a:hover {
-    color: #49dbff;
+  .footer-social-icon a i {
+    transition: 0.3s;
   }
+
 
   textarea {
     width: 100%;
@@ -585,6 +589,24 @@ ul li {
   .footer-content i {
     font-size: clamp(1rem, 2vw, 1.3rem);
     margin-right: 6px;
+    transition: 0.3s;
+  }
+  /* <a href="#" class=""><i class="fab fa-facebook-square"></i></a>
+  <a href="#"><i class="fab fa-instagram-square"></i></a>
+  <a href="#"><i class="fab fa-linkedin"></i></a>
+  <a href="#"><i class="fab fa-youtube"></i></a> */
+
+  .fa-facebook-square:hover {
+    color: #2766ad;
+  }
+  .fa-instagram-square:hover {
+    color: #bd520a;
+  }
+  .fa-linkedin:hover {
+    color: #163d77;
+  }
+  .fa-youtube:hover {
+    color: #d42323;
   }
   .footer-content a {
     color: white;
@@ -739,6 +761,9 @@ ul li {
     .whatsapp {
       bottom: 2%;
       right: 7%;
+    }
+    .footer-social-icon a {
+      margin: 0px 12px;
     }
   }
   

@@ -1,0 +1,199 @@
+.tutor-list-heading {
+    width: 100%;
+    height: 55vh;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-bottom: 80px;
+}
+
+  .tutor-list-heading i {
+    color: #04AA6D;
+    font-size: clamp(1rem, 2vw, 0.8rem);
+    padding: 5px;
+  }
+  .tutor-list-heading p {
+    color: #04AA6D;
+    font-weight: bold;
+    font-size: clamp(1rem, 2vw, 0.8rem);
+  }
+  select {
+    height: 50px;
+  }
+
+ .tutor-list p {
+  color: #858585;
+  font-size: clamp(0.69rem, 2vw, 0.85rem);
+ }
+
+/* Range slider css start */
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background: #0a8a5b;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #0a8a5b;
+    cursor: pointer;
+  }
+  
+/* Range slider css end */
+
+
+.tutor-profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e2e2;
+  overflow: hidden;
+}
+.tutor-profile-image img {
+  width: 100%;
+  transform: scale(2);
+}
+.tutor-info-container h3 {
+  color: black;
+  font-weight: bold;
+  font-size: clamp(1rem, 3vw, 1.4rem);
+}
+.tutor-info-container i {
+  margin: 0px 10px 15px 10px;
+}
+
+/* Country flag css start */
+i.flag:not(.icon):before {
+  content: "";
+  background: url(https://mdbootstrap.com/img/svg/flags.png) no-repeat -108px -1976px;
+}
+i.flag:not(.icon), i.flag:not(.icon):before {
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+}
+i.flag:before {
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  content: "";
+  background: url(https://mdbootstrap.com/img/svg/flags.png) no-repeat -108px -1976px;
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+/* Flag of Bangladesh */
+i.flag-bangladesh:before, i.flag-bd:before {
+  background-position: 0 -468px!important;
+}
+
+/* Flag for pakistan */
+i.flag-pakistan:before, i.flag-pk:before {
+  background-position: -72px -546px!important;
+}
+
+/* Flag foe india */
+i.flag-in:before, i.flag-india:before {
+  background-position: -36px -702px!important;
+}
+
+/* Country flag css end */
+
+.verification-icon {
+  width: 17px;
+  height: auto;
+}
+
+.fa-star {
+  color: #ffc629;
+}
+.fa-dollar-sign {
+  color: #04AA6D;
+}
+.book-trail-btn {
+  background-color: #0b9b66;
+  box-shadow: 0px 0px 83px -23px rgba(0,0,0,0.88);
+}
+.book-trail-btn:hover {
+  background-color: #087a51;
+}
+.single-tutor-row {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.single-tutor-row:hover {
+  box-shadow: 0px 0px 46px -25px rgba(0,0,0,0.88);
+}
+.language-container {
+  margin: 10px 6px 15px 0px;
+}
+.language-container span {
+  font-size: 9px;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+.language-level {
+  margin-right: 5px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .tutor-profile-image {
+   margin: 2rem auto;
+  }
+  .tutor-list-heading {
+    height: 70vh;
+    padding-bottom: 10px;
+}
+.language-container {
+  margin: 5px 4px 15px 0px;
+}
+.language-container span {
+  font-size: 8px;
+  padding: 3px 4px;
+}
+.language-level {
+  margin-right: 3px;
+}
+.slider {
+  height: 6px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+}
+
+} 
